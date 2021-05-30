@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    box-shadow: 1px 1px 6px 0px #ccc;
+
+    .text {
+        font-size: 28px;
+        font-family: "Poppins";
+    }
+    .button-outer {
+        text-align: end;
+
+        .button {
+            padding: 8px 40px;
+            border: 1px solid #6fd216;
+            border-radius: 20px;
+            background: #b4ef74;
+            color: #0a7d1d;
+            font-size: 14px;
+            font-family: "Poppins";
+            &:hover {
+                background: darken($color: #b4ef74, $amount: 20);
+                cursor: pointer;
+            }
+        }
+    }
+}
